@@ -30,13 +30,15 @@ i{
     margin-top: 3px;
     margin-right : 5px;
     font-size: 0.8em;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
 }
 .nav-tabs .nav-link.active i{
     color:#03c75a;
 }
 .tab-content{
     width: 100%;
-    height: 400px;
+    height: 330px;
     border: 1px solid #dee2e6;
     border-top: none;
 }
@@ -66,11 +68,78 @@ input{
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     
-    
 }
 .binput{
     width: 400px;
     border: 1px solid #dee2e6;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+}
+.checkbox{
+    width: 400px;
+}
+.checkbox label{
+    cursor: pointer;
+    color: darkgray;
+}
+.checkbox label i{
+    margin: 0;
+}
+span{
+    font-size: 14px;
+}
+.checkbox i{
+    font-size: 1.2em;
+    
+}
+.checkbox input[type="checkbox"]{
+    position: absolute;
+    opacity: 0;
+}
+.checkbox input[type="checkbox"]:checked + label i{
+    color: #03c75a;
+}
+.checkbox input[type="checkbox"]:checked + label span{
+    color: black;
+}
+.ipcheckbox{
+    width: 45px;
+    height: 20px;
+    background: #a5adb8;
+    border-radius: 9px;
+    position: relative;
+}
+.circleLeft{
+    margin-left: 2px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: white;
+    position: relative;
+}
+.circleRight{
+    margin-right: 2px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: white;
+    position: relative;
+    display: none;
+}
+.circleOn{
+    position: absolute;
+    top: 0;
+    left: 3px;
+    display: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+}
+.circleOff{
+    position: absolute;
+    top: 0;
+    left: 23px;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
 }
